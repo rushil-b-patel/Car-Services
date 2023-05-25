@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { StarIcon } from '@heroicons/react/20/solid'
 import { RadioGroup } from '@headlessui/react'
 import { Link } from 'react-router-dom'
-import ProductCard from './ProductCard'
 
 const product = {
   id: 1,
@@ -247,10 +246,6 @@ export default function Product() {
       </div>
 
       {/* <ProductCard /> */}
-
-
     </>
-
-
   )
 }
