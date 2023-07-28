@@ -45,8 +45,8 @@ export default function Example() {
           </NavLink>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <NavLink to='/Contact' className="font-semibold text-white hover:text-zinc-500 aria-[current=page]:text-blue-400">
-            Contact <span aria-hidden="true">&rarr;</span>
+          <NavLink to='/Data' className="font-semibold text-white hover:text-zinc-500 aria-[current=page]:text-blue-400">
+            Data <span aria-hidden="true">&rarr;</span>
           </NavLink>
         </div>
       </nav>
@@ -116,11 +116,11 @@ export default function Example() {
                 </NavLink>
               </div>
               <div className="py-6">
-                <NavLink to='Contact'
+                <NavLink to='Data'
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold hover:text-zinc-500 aria-[current=page]:text-blue-400"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Contact
+                  Data
                 </NavLink>
               </div>
             </div>

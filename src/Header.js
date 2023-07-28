@@ -80,7 +80,7 @@ const Header = () => {
                   href="#"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Contact
+                  Data
                 </a>
               </div>
             </div>
@@ -113,7 +113,7 @@ const Header = () => {
             href="#"
             className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
-            Contact
+            Data
           </a>
         </div>
       </div>
