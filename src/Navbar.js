@@ -120,7 +120,7 @@ export default function Example() {
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold hover:text-zinc-500 aria-[current=page]:text-blue-400"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Data
+                  Data Storage
                 </NavLink>
               </div>
             </div>
