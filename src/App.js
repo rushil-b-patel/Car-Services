@@ -9,6 +9,7 @@ import Home from './Home';
 import Form from './Form';
 import Navbar from './Navbar';
 import Header from './Header';
+import Shop from './Shop';
 
 
 function App() {
@@ -21,8 +22,9 @@ function App() {
         <Route path='Services' element={<Services />}></Route>
         <Route path='Form' element={<FormNew />}></Route>
         <Route path='ContextForm' element={<Form />}></Route>
-        <Route path='Contact' element={<About />}></Route>
+        <Route path='Data' element={<About />}></Route>
         <Route path='Product' element={<Product />}></Route>
+        <Route path='Shop' element={<Shop />}></Route>
       </Routes>
       <FooterNew />
     </>

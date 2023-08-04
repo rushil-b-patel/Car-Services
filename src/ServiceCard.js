@@ -1,37 +1,43 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
-import { Link } from 'react-router-dom';
-
+import {
+  Card,
+  CardHeader,
+  CardBody,
+  Typography,
+  Button,
+  CardFooter,
+} from "@material-tailwind/react";
+ 
 export default function ServiceCard(props) {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardMedia 
-          component="img"
-          height="140"
-          image={props.image}
-          alt={props.ServiceName}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {props.ServiceName}
+    <Card className="w-96">
+      <CardHeader shadow={false} floated={false} className="h-96">
+        <img 
+          src={props.image} 
+          className="w-full h-full object-cover"
+          />
+      </CardHeader>
+      <CardBody>
+        <div className="flex items-center justify-between mb-2">
+          <Typography color="blue-gray" className="font-medium">
+            {props.name}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {props.Description}
+          <Typography color="blue-gray" className="font-medium">
+            {props.price}
           </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-        <Link style={{ textDecoration: 'none', color:'blue'}} to='/Form'>
-          Apply
-        </Link>
+        </div>
+        <Typography variant="small" color="gray" className="font-normal opacity-75">
+          {props.description}
+        </Typography>
+      </CardBody>
+      <CardFooter className="pt-0">
+        <Button
+          ripple={false}
+          fullWidth={true}
+          className="bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:shadow-none hover:scale-105 focus:shadow-none focus:scale-105 active:scale-100"
+          >
+          Add to Cart
         </Button>
-      </CardActions>
+      </CardFooter>
     </Card>
   );
 }
